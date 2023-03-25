@@ -8,7 +8,7 @@ response = requests.get(
     'https://leagueoflegends.fandom.com/wiki/'+search+'/LoL')
 soup = BeautifulSoup(response.content, 'html.parser')
 
-class champion_Info:
+class champion_Info: #Contains Chamion info
     Health = soup.find(id='Health_'+search)
     Mana = soup.find(id='ResourceBar_'+search)
     Armor = soup.find(id='Armor_'+search)
