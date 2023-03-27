@@ -36,7 +36,7 @@ while True:
             window['magic_Resist'].update(champion_Info["Magic_Resist"].text.strip())
             window['attack_Damage'].update(champion_Info["Attack_Damage"].text.strip())
         except:
-            window['status'].update('Make sure that you insert a Youtube link')
+            window['status'].update('Make sure you typed the champions name correct')
             continue
     elif event == "Cancel" or event == PySimpleGUI.WIN_CLOSED:
         window.close()
