@@ -28,6 +28,7 @@ window = PySimpleGUI.Window('LoL-Tool', layout)
 
 while True:
     event, values = window.read()
+    window['status'].update('')
     if event == 'Ok':
         try:
             champion_Info = get_champion_info(values[0])
