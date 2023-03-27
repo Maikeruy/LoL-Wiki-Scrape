@@ -21,7 +21,8 @@ layout = [[PySimpleGUI.Text('Champion:'), PySimpleGUI.InputText()],
            PySimpleGUI.Text('Mana: '),PySimpleGUI.Text('', key='Mana')],
           [PySimpleGUI.Text('Armor: '),PySimpleGUI.Text('', key='Armor'), 
            PySimpleGUI.Text('Magic Resist: '),PySimpleGUI.Text('', key='magic_Resist')],
-          [PySimpleGUI.Text('Attack Damage: '),PySimpleGUI.Text('', key='attack_Damage')]]
+          [PySimpleGUI.Text('Attack Damage: '),PySimpleGUI.Text('', key='attack_Damage')],
+          [PySimpleGUI.Text('', key='status')]]
 
 window = PySimpleGUI.Window('LoL-Tool', layout)
 
